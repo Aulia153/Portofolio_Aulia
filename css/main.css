@@ -70,8 +70,8 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #ffffff;
+  background-color: #121212;
   font-family: var(--default-font);
 }
 
@@ -560,6 +560,7 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  background-color: transparent;
 }
 
 .section-title h2 {
