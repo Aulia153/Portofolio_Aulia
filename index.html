@@ -1,292 +1,527 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aulia </title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Aulia Silmi</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <link href="style.css" rel="stylesheet" />
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" >
+
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top glassmorph">
-    <div class="container">
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <div class="social-links d-flex justify-content-center gap-3">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href="https://github.com/Aulia153"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/aaauulliiaa_/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aulia-silmi-0262b929b/" class="me-3"><i class="bi bi-linkedin"></i></a>
       </div>
-    </div>
-  </nav>
 
-  <!-- Hero -->
-  <header class="hero text-white text-center">
-    <div class="container" data-aos="fade-up">
-      <h1 class="glow-text">Aulia Silmi Mardiyanti</h1>
-      <p class="lead">An Informatics Engineering Student with a experience in web development, system analyst, and quality assurance.</p>
-      <br>
-        <a href="img/CV_Aulia.pdf" download class="btn fancy-button rounded-pill">Download Resume</a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
   </header>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container p-4 rounded-4" data-aos="fade-up">
-      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-4 profile-card">
+  <main class="main">
 
-        <!-- Profil -->
-        <div class="d d-flex align-items-center gap-3">
-          <img src="img/aulia.jpg" alt="Aulia Silmi Mardiyanti" class="profile-img">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100 gap-3 profile-text-wrapper">
-            <div class="profile-text text-md-start text-center">
-              <h2 class="mb-0 fw-bold text-white">Aulia Silmi Mardiyanti</h2>
-              <p class="mb-0 text-light">Informatics Engineering Student</p>
-            </div>
-            <button class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#aboutModal">About Me</button>
-          </div>
-        </div>
+      <img src="img/bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Aulia Silmi Mardiyanti</h2>
+        <p><span class="typed" data-typed-items="Informatics Engineering Student, Web Developer, Quality Assurance, Freelancer"></span></p>
+        <br>
+        <a href="img/CV_Aulia.pdf" download class="btn-glass">Download Resume</a>
       </div>
-    </div>        
-  </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section text-center py-5">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4"><i class="fas fa-tools"></i>Programming Language & Tools</h2>
+    </section><!-- /Hero Section -->
 
-      <div class="row justify-content-center">
-          <!-- HTML -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-html5 skill-icon text-danger"></i>
-              <h5>HTML</h5>
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-right">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="img/awl.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Aulia Silmi Mardiyanti</span></p>
+                <p><strong>Profile: </strong> <span>Informatics Engineering Student</span></p>
+                <p><strong>Email: </strong> <span>auliasilmi133@gmail.com</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h3>Programming Language and Tools</h3>
+
+               <div class="skills-grid">
+                <div class="skill-icon"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill-icon"><i class="fab fa-php"></i><span>PHP</span></div>
+                <div class="skill-icon"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                <div class="skill-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="skill-icon"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                <div class="skill-icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="skill-icon"><i class="fas fa-server"></i><span>XAMPP</span></div>
+                <div class="skill-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+              </div>
             </div>
           </div>
 
-          <!-- CSS -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-css3 skill-icon text-danger"></i>
-              <h5>CSS</h5>
-            </div>
-          </div>
-
-          <!-- PHP -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-php skill-icon text-primary"></i>
-              <h5>PHP</h5>
-            </div>
-          </div>
-
-          <!-- Microsoft Office -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fas fa-file-word skill-icon text-primary"></i>
-              <h5>Microsoft Office</h5>
-            </div>
-          </div>
-
-          <!-- draw.io -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fas fa-project-diagram skill-icon text-warning"></i>
-              <h5>draw.io</h5>
-            </div>
-          </div>
-
-          <!-- VS Code -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fas fa-code skill-icon text-info"></i>
-              <h5>Visual Studio Code</h5>
-            </div>
-          </div>
-
-          <!-- Figma -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-figma skill-icon" style="color: #a259ff;"></i>
-              <h5>Figma</h5>
-            </div>
-          </div>
-
-          <!-- Java Script -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-js-square skill-icon text-warning"></i>
-              <h5>JavaScript</h5>
-            </div>
-          </div>
-
-          <!-- Bootstrap-->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-bootstrap skill-icon text-purple"></i>
-              <h5>Bootstrap</h5>
-            </div>
-          </div>
-
-            <!-- MySQL -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fas fa-database skill-icon text-info"></i>
-              <h5>MySQL</h5>
-            </div>
-          </div>
-
-          <!-- Laravel -->
-           <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fab fa-laravel skill-icon text-danger"></i>
-              <h5>Laravel</h5>
-            </div>
-           </div>
-
-          <!-- Express (pakai icon generic) -->
-          <div class="col-md-4 col-lg-3 mb-4">
-            <div class="skill-card">
-              <i class="fas fa-server skill-icon text-light"></i>
-              <h5>Express.JS</h5>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Hello!! My name Aulia Silmi Mardiyanti, but you can call me Aulia. I'm a Informatics Engineering 
+                Student with a strong interest in web development and software engineering.
+              </p>
+              <p>
+                I have hands-on experience in building web applications, conducting software testing, and working
+                as a system analyst. Throughout my academic journey, I've contributed to several development projects
+                through effective team collaboration.
+              </p>
+              <p>
+                I'm proficient in front-end technologies like HTML, CSS, JavaScript, and Bootstrap, as well as back-end
+                tools such as PHP, Laravel, and Express.js. Outside of tech, I enjoy expressing my creativity through drawing,
+                reading, and watching anime.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section text-center py-5">
-    <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Projects</h2>
-
-      <div class="text-center mb-4">
-        <button class="filter-btn" data-filter="all"> Semua </button>
-        <button class="filter-btn" data-filter="webmob"> Website & Mobile </button>
-        <button class="filter-btn" data-filter="desktop"> Desktop </button>
       </div>
 
-      <div class="row" id="projectList">
-        <div class="col-md-4 project-item" data-category="webmob" data-aos="fade-up">
-            <div class="project-card">
-                <img src="img/sentra.png" class="project-img img-fluid" alt="SENTRA Website">
-                <h5>Web Developer | SENTRA (Project Based Learning)</h5>
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>
+          As a passionate Informatics Engineering student, I continuously strive to grow in the field of technology. This section summarizes my academic journey, 
+          technical skills, and practical experience in the world of software development.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Profile</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Aulia Silmi Mardiyanti</h4>
+              <p><em>
+                I'm a 4th-semester Informatics Engineering student at Politeknik Negeri Jember with experience in software development, both front-end and back-end.
+                I've also taken roles as a Quality Assurance and Project Manager. I'm skilled in HTML, PHP, and Java, and one of my standout projects is SENTRA, a reporting
+                system built in collaboration with the Departmen of Social Affairs. I'm an adaptable, self-motivated learner, a team player, and a freelancer in my spare time. 
+                Always open to new and meaningful opportunities!
+              </em></p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Politeknik Negeri Jember</h4>
+              <h5>2023 - Present</h5>
+              <p><em>D-IV Informatics Engineering</em></p>
+              <p>Relevant Courses :
+              <br>Database Concepts, Software Development, Basic Programming, Object-Based Application Systems,
+                Human-Computer Interaction, Desktop-Based Information Systems, Software Project Planning, Project Management, Computer Network
+                Concepts, Mobile Applications Framework, Web Information Framework, Software Quality Management, Software Maintenance, Software Testing.
+              </p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>SMK Negeri 1 Lengkong</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Computer Network and Telecommunication Engineering</em></p>
+              <p>Vocational Subject :
+                <br>Digital Simulation and Communication, Computer Systems, Basic Computer and Networking, Basic Programming, Basic Graphic Design, Wide Area Network
+                (WAN) Technology, Network Infrastructure Administration, Network System Administration, Network Services Technology, Creative Product and Entrepreneurship.
+              </p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Internship Experience/PKL</h3>
+            <div class="resume-item">
+              <h4>LPK Media Kertosono</h4>
+              <h5>June 2019 - December 2019</h5>
+              <p><em>Intern & Assistant Staff </em></p>
+              <p>
+                During my Internship at LPK MEDIA Kertosono, I gained hands-on experience in assembling network cables, configuring Mikrotik routers, Debian, building CPUs,
+                and other technical tasks. This experience provided me with a solid foundation in computer networking and hardware assembly through real-world practice.
+              </p>
+            </div><!-- Edn Resume Item -->
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Nesciunt Mete</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Here are some of the projects I’ve worked on, showcasing my skills in software development, and teamwork. 
+          Each project reflects my passion for technology and continuous learning through real-world challenges.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="img/sentra.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web Developer | SENTRA (Project Based Learning)</h4>
                 <p>January 2025 - Present</p>
-                <p>Contributed as a web developer for the admin panel of the SENTRA application.
-                    Responsible for designing and developing system flows, implementing front-end features for the web platform, 
-                    and integrating backend functionality using PHP. Focused on improving application performace, responsif, and user experience.
+                <p>
+                  Contributed as a web developer for the admin panel of the SENTRA application.
+                  Responsible for designing and developing system flows, implementing front-end features for the web platform, 
+                  and integrating backend functionality using PHP. Focused on improving application performace, responsif, and user experience.
                 </p>
-            </div>
-        </div>
-        
-            <div class="col-md-4 project-item" data-category="webmob" data-aos="fade-up">
-                <div class="project-card">
-                    <img src="img/nganjukvisit.png" class="project-img img-fluid" alt="Nganjuk Visit">
-                    <h5>Quality Assurance | Nganjuk Visit (Project Based Learning)</h5>
-                    <p>September 2024 - December 2024</p>
-                    <p> Conducted comprehensive sstem testing to ensure the application met functional requirements and was free of bugs.
-                        Created the cases, performed manual testing, documented findings, and collaborated with developers to ensure the application
-                        met quality standards before finalization.
-                    </p>
-                </div>
-            </div>
-        
+                <a href="img/sentra.png" title="SENTRA" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-        <div class="col-md-4 project-item" data-category="webmob" data-aos="fade-up">
-            <div class="project-card">
-                <img src="img/e-lades.png" class="project-img img-fluid" alt="E-LadesApp">
-                <h5>System Analyst | E-Lades (Project Based Learning)</h5>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="img/e-lades.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>System Analyst | E-Lades (Project Based Learning)</h4>
                 <p>September 2024 - December 2024</p>
-                <p>Analyzed and designed system workflows using flowcharts, activty diagrams, and use cases.
-                    Prepared system specifications and collaborated with developers to ensure user needs and application
-                    functionality were met effectively.
+                <p>
+                  Analyzed and designed system workflows using flowcharts, activty diagrams, and use cases.
+                  Prepared system specifications and collaborated with developers to ensure user needs and application
+                  functionality were met effectively.
                 </p>
-            </div>
-        </div>
+                <a href="img/e-lades.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://elades.pbltifnganjuk.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-        <div class="col-md-4 project-item" data-category="desktop" data-aos="fade-up">
-            <div class="project-card">
-                <img src="img/e-ffo.png" class="project-img img-fluid" alt="E-FFO App">
-                <h5>Project Manager | E-FFO (Project Based Learning)</h5>
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="img/nganjukvisit.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Quality Assurance | Nganjuk Visit (Project Based Learning)</h4>
+                <p>September 2024 - December 2024</p>
+                <p>
+                  Conducted comprehensive sstem testing to ensure the application met functional requirements and was free of bugs.
+                  Created the cases, performed manual testing, documented findings, and collaborated with developers to ensure the application
+                  met quality standards before finalization.
+                </p>
+                <a href="img/nganjukvisit.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://nganjukvisit.pbltifnganjuk.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="img/e-ffo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Project Manager | E-FFO (Project Based Learning)</h4>
                 <p>February 2024 - May 2024</p>
-                <p>Managed the entire project lifecycle from planning and task distribution to execution and evalution.
-                    Led the team to deliver the application according to user requirements and timelines. Ensured smooth 
-                    coordination and effective communication to meet project milestones.
+                <p>
+                  Managed the entire project lifecycle from planning and task distribution to execution and evalution.
+                  Led the team to deliver the application according to user requirements and timelines. Ensured smooth 
+                  coordination and effective communication to meet project milestones.
                 </p>
-            </div>
-        </div>
+                <a href="img/e-ffo.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="https://github.com/Aulia153/E-FFO" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
 
-        <div class="col-md-4 project-item" data-category="desktop" data-aos="fade-up">
-            <div class="project-card">
-                <img src="img/assytem.png" class="project-img img-fluid" alt="AsSystem App">
-                <h5> Documentator | AsSystem (Project Based Learning)</h5>
-                <p> September 2023 - December 2023</p>
-                <p> Responsible for documenting the entire project development process, from planning to evaluation.
-                    Created reports, prepared technical documentation, and ensured that all decisions and project results were
-                    clearly recorded for team and stakeholder reference.
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="img/assytem.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Documentator | AsSystem (Project Based Learning)</h4>
+                <p>September 2023 - December 2023</p>
+                <p>
+                  Responsible for documenting the entire project development process, from planning to evaluation.
+                  Created reports, prepared technical documentation, and ensured that all decisions and project results were
+                  clearly recorded for team and stakeholder reference.
                 </p>
+                <a href="img/assytem.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+           Interested in working together or just want to say hi? Feel free to reach out through any of the platforms below.
+           I'm always open to new opportunities, collaborations, or simply a friendly chat!
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container py-5" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+
+            <div class="d-flex align-items-center gap-3 flex-fill">
+              <div class="info-item d-flex align-items-center flex-fill">
+                <i class="bi bi-github flex-shrink-0"></i>
+                <div>
+                  <h3>Github</h3>
+                  <p><a href="https://github.com/Aulia153" target="_blank">github.com/Aulia153</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="d-flex align-items-center gap-3 flex-fill">
+              <div class="info-item d-flex align-items-center flex-fill">
+                <i class="bi bi-linkedin flex-shrink-0"></i>
+                <div>
+                  <h3>LinkedIn</h3>
+                  <p><a href="https://www.linkedin.com/in/aulia-silmi-0262b929b/" target="_blank">aulia-silmi-0262b929b</a></p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="d-flex align-items-center gap-3 flex-fill">
+              <div class="info-item d-flex align-items-center flex-fill">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>auliasilmi133@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
             </div>
-        </div>
-    </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section text-center">
-    <div style="max-width: 500px; margin: 0 auto; padding: 40px; border-radius: 20px;">
-      <h2 class="mb-4">Kontak</h2>
-      <p>Email: <a href="mailto:auliasilmi133@gmail.com">auliasilmi133@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/Aulia153" target="_blank">github.com/Aulia153</a></p>
-    </div>
-  </section>
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
 
-  <!-- About Modal-->
-  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 rounded-4 overflow-hidden" style="background-color: #0d1b2a;">
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
 
-        <!-- Foto -->
-        <div class="text-center" style="background-color: #1b263b;">
-            <img src="img/aulia.jpg" alt="Aulia" class="img-fluid" style="max-width: 200px; height: auto; border-radius: 1rem; margin-top: 20px;">
-        </div>
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
 
-        <!-- Text dan tombol-->
-         <div class="modal-body text-white text-center p-4">
-          <h5 class="modal-title mb-3">About Me</h5>
-          <p>Hello! My name Aulia Silmi Mardiyanti, but you can call me Aulia. I am an Information Engineering student with a strong interest 
-            in web development. I have experience in web development, software testing, and system analyst. I have contributed to various application development poject through team collaboration.
-            <p>I'm proficient in using technologies such as HTML, CSS, JavaScript, and Bootstrap for front-end development, as well ass PHP, Laravel, and Express.js for backend development. By the way, 
-            I also like drawing, reading, and watching anime.</p>
-            <button type="button" class="btn btn-outline-light rounded-pill mt-3" data-bs-dismiss="modal">Close</button>
-         </div>
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Aulia Silmi Mardiyanti</strong> <span>All Rights Reserved</span></p>
       </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center py-3">
-    <small>© 2025 Aulia Silmi Mardiyanti</small>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="main.js"></script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
