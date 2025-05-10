@@ -24,6 +24,7 @@
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" >
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
   <!-- Main CSS File -->
@@ -313,25 +314,25 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Here are some of the projects I’ve worked on, showcasing my skills in software development, and teamwork. 
+        <p class="section-desc">Here are some of the projects I’ve worked on, showcasing my skills in software development, and teamwork. 
           Each project reflects my passion for technology and continuous learning through real-world challenges.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container portfolio">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="img/sentra.png" class="img-fluid" alt="">
+              <img src="img/sentra.png" class="img-fluid" alt="SENTRA">
               <div class="portfolio-info">
                 <h4>Web Developer | SENTRA (Project Based Learning)</h4>
                 <p>January 2025 - Present</p>
                 <p>
                   Contributed as a web developer for the admin panel of the SENTRA application.
-                  Responsible for designing and developing system flows, implementing front-end features for the web platform, 
-                  and integrating backend functionality using PHP. Focused on improving application performace, responsif, and user experience.
+  Responsible for designing system flows, implementing front-end features, and integrating back-end functionality using PHP and Laravel.
+  Focused on performance optimization, responsive layout, and enhancing user experience.
                 </p>
                 <a href="img/sentra.png" title="SENTRA" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
@@ -348,7 +349,7 @@
                   Prepared system specifications and collaborated with developers to ensure user needs and application
                   functionality were met effectively.
                 </p>
-                <a href="img/e-lades.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="img/e-lades.png" title="E-Lades" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://elades.pbltifnganjuk.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -363,7 +364,7 @@
                   Created the cases, performed manual testing, documented findings, and collaborated with developers to ensure the application
                   met quality standards before finalization.
                 </p>
-                <a href="img/nganjukvisit.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="img/nganjukvisit.png" title="nganjukvisit" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://nganjukvisit.pbltifnganjuk.com/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -378,7 +379,7 @@
                   Led the team to deliver the application according to user requirements and timelines. Ensured smooth 
                   coordination and effective communication to meet project milestones.
                 </p>
-                <a href="img/e-ffo.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="img/e-ffo.png" title="E-FFO" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="https://github.com/Aulia153/E-FFO" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -393,7 +394,7 @@
                   Created reports, prepared technical documentation, and ensured that all decisions and project results were
                   clearly recorded for team and stakeholder reference.
                 </p>
-                <a href="img/assytem.png" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="img/assytem.png" title="AsSystem" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -492,7 +493,7 @@
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
+  <footer id="footer" class="footer dark-background">
 
     <div class="container">
       <div class="copyright text-center ">
@@ -521,6 +522,10 @@
 
   <!-- Main JS File -->
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 
 </body>
 
